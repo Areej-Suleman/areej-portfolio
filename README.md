@@ -9,6 +9,7 @@ This site showcases my **skills**, **projects**, and **certifications**.
 ## 📂 Project Structure
 Areej-Portfolio/
 │
+
 ├── index.html
 
 
@@ -16,15 +17,15 @@ Areej-Portfolio/
 
 │ └── css/images/
 
-│ ├── profile.jpeg
+   │ ├── profile.jpeg
 
-│ ├── Areej Suleman CV.pdf
+   │ ├── Areej Suleman CV.pdf
 
-│ └── certificates/
+   │ └── certificates/
 
-│ ├── certificate 1.jpeg
-│ ├── certificate 2.jpeg
-│ └── certificate 3.jpeg
+       │ ├── certificate 1.jpeg
+       │ ├── certificate 2.jpeg
+       │ └── certificate 3.jpeg
 
 
 ## 🛠️ Technologies Used
