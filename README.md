@@ -10,11 +10,18 @@ This site showcases my **skills**, **projects**, and **certifications**.
 Areej-Portfolio/
 │
 ├── index.html
+
+
 ├── assets/
+
 │ └── css/images/
+
 │ ├── profile.jpeg
+
 │ ├── Areej Suleman CV.pdf
+
 │ └── certificates/
+
 │ ├── certificate 1.jpeg
 │ ├── certificate 2.jpeg
 │ └── certificate 3.jpeg
