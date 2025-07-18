@@ -7,8 +7,7 @@ This site showcases my **skills**, **projects**, and **certifications**.
 [View My Portfolio](https://areej418.github.io/areej-portfolio/)
 
 ## 📂 Project Structure
-Areej-Portfolio/
-│
+Areej-Portfolio
 
 ├── index.html
 
