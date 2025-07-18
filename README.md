@@ -14,18 +14,18 @@ Areej-Portfolio/
 
 
 ├── assets/
+ 
+ │ └── css/images/
 
-│ └── css/images/
+    │ ├── profile.jpeg
 
-   │ ├── profile.jpeg
+    │ ├── Areej Suleman CV.pdf
 
-   │ ├── Areej Suleman CV.pdf
+    │ └── certificates/
 
-   │ └── certificates/
-
-       │ ├── certificate 1.jpeg
-       │ ├── certificate 2.jpeg
-       │ └── certificate 3.jpeg
+        │ ├── certificate 1.jpeg
+        │ ├── certificate 2.jpeg
+        │ └── certificate 3.jpeg
 
 
 ## 🛠️ Technologies Used
@@ -42,5 +42,5 @@ Areej-Portfolio/
 ---
 
 ### 📬 Contact
-**Email:** areej@example.com  
+**Email:** areej987suleman@gmail.com  
 **GitHub:** [areej418](https://github.com/areej418)
