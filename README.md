@@ -6,7 +6,7 @@ This site showcases my **skills**, **projects**, and **certifications**.
 ## 🌟 Live Demo
 [View My Portfolio](https://areej418.github.io/areej-portfolio/)
 
-## 📂 Project Structure
+## 📂 Portfolio Structure
 Areej-Portfolio
 
 ├── index.html
