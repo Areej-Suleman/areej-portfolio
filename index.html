@@ -5,10 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Areej Suleman | Portfolio</title>
 <style>
-  /* ===== RESET ===== */
+
+  /* ===== CSS RESET ===== */
   * {
-    margin: 0; padding: 0; box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  /* ===== YOUR OTHER STYLES BELOW ===== */
+  html, body {
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
   }
   html, body {
     height: 100%;
@@ -54,13 +65,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 20px 35px;
     background: var(--header-bg);
     backdrop-filter: blur(10px);
     z-index: 100;
   }
   .logo {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: var(--primary);
   }
@@ -403,6 +414,44 @@
     display: inline-block;
     margin-top: 6px;
   }
+#contact p a {
+  font-size: 1.5rem; /* Make icon + text bigger */
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* space between icon and text */
+  margin-right: 30px; /* spacing between links */
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#contact p a:last-child {
+  margin-right: 0; /* no margin after last link */
+}
+
+#contact p a i {
+  font-size: 2.2rem; /* bigger icons */
+}
+
+/* Optional: hover effect */
+#contact p a:hover {
+  color: #7d3c98;
+}
+#contact p.message-box {
+  max-width: 600px;
+  margin: 20px auto 40px auto;
+  padding: 18px 25px;
+  font-size: 1.4rem;
+  color: #fff; /* white text */
+  background-color: #9b59b6; /* purple background */
+  border-radius: 12px;
+  font-weight: 600;
+  text-align: center;
+  box-shadow:
+    0 0 15px rgba(155, 89, 182, 0.8),
+    0 0 30px rgba(155, 89, 182, 0.6);
+}
+
 
   /* ===== FOOTER ===== */
   footer {
@@ -410,6 +459,7 @@
     padding: 15px;
     color: var(--text-color);
   }
+
 </style>
 
 <!-- Font Awesome CDN for icons -->
@@ -607,14 +657,30 @@
 <!-- CONTACT SECTION -->
 <section id="contact" style="position: relative; z-index: 10; max-width: 900px; margin: 60px auto 80px; padding: 0 20px; text-align:center;">
   <h2 style="color: var(--primary); font-size: 3rem; margin-bottom: 30px;">Contact</h2>
-  <p>Feel free to reach out for collaborations or inquiries.</p>
-  <p>Email: <a href="mailto:areej987suleman@gmail.com">areej987suleman@gmail.com</a></p>
-</section>
+  <p class="message-box">Feel free to reach out for collaborations or inquiries.</p>
+</p>
+  <p>
+    <a href="mailto:areej987suleman@gmail.com" target="_blank" rel="noopener noreferrer" style="color: var(--primary); text-decoration: none; margin-right: 20px;">
+      <i class="fas fa-envelope"></i> Email
+    </a>
+    <a href="https://github.com/areej418" target="_blank" rel="noopener noreferrer" style="color: var(--primary); text-decoration: none; margin-right: 20px;">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+    <a href="https://linkedin.com/in/areej-suleman" target="_blank" rel="noopener noreferrer" style="color: var(--primary); text-decoration: none;">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+  </p>
+<section id="contact">...</section>
 
-<!-- FOOTER -->
-<footer>
-  <p>© 2025 Areej Suleman. All rights reserved.</p>
-</footer>
+  <footer>
+    <p>© <span id="currentYear"></span> Areej Suleman. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+
 
 <script>
   // ===== MENU TOGGLE =====
