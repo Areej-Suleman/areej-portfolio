@@ -3,24 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Areej Suleman | Portfolio</title>
+
+  <title>Areej Suleman | AI & ML Developer Portfolio</title>
+
+  <meta name="description" content="Explore the professional portfolio of Areej Suleman, an AI & ML Developer and Data Analyst from Attock, Pakistan. Discover innovative machine learning projects, skills in Python, and a passion for data-driven solutions.">
+
+  <meta name="keywords" content="Areej Suleman, AI Developer, ML Developer, Machine Learning Engineer, Data Analyst, Portfolio, Python, COMSATS, Attock, Pakistan, Frontend Developer">
+
+  <link rel="canonical" href="https://areej-suleman.github.io/areej-portfolio/" />
+
+  <meta property="og:title" content="Areej Suleman | AI & ML Developer Portfolio" />
+  <meta property="og:description" content="Explore the portfolio of an AI & ML Developer specializing in Python and machine learning." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://areej-suleman.github.io/areej-portfolio/" />
+  <meta property="og:image" content="https://areej-suleman.github.io/areej-portfolio/assets/css/images/profile.jpeg" />
+  <meta property="og:site_name" content="Areej Suleman's Portfolio" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Areej Suleman | AI & ML Developer Portfolio" />
+  <meta name="twitter:description" content="Explore the portfolio of an AI & ML Developer specializing in Python and machine learning." />
+  <meta name="twitter:image" content="https://areej-suleman.github.io/areej-portfolio/assets/css/images/profile.jpeg" />
+
+  <link rel="icon" type="image/png" href="assets/Black White Minimal Simple Modern Creative Studio Ego Logo (2).png">
+  <link rel="apple-touch-icon" href="assets/Black White Minimal Simple Modern Creative Studio Ego Logo (2).png">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Areej Suleman",
+      "url": "https://areej-suleman.github.io/areej-portfolio/",
+      "image": "https://areej-suleman.github.io/areej-portfolio/assets/css/images/profile.jpeg",
+      "jobTitle": "AI & ML Developer",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "COMSATS University Islamabad"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Areej Suleman"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Attock",
+        "addressRegion": "Punjab",
+        "addressCountry": "PK"
+      },
+      "sameAs": [
+        "https://github.com/Areej-Suleman",
+        "https://linkedin.com/in/areej-suleman"
+      ]
+    }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="icon" type="image/png" href="assets/Black White Minimal Simple Modern Creative Studio Ego Logo (2).png">
 
   <style>
-    /* ===== CSS RESET ===== */
+    /* CSS styles remain the same... */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
-    /* ===== CORE STYLES & THEME COLORS ===== */
     :root {
       --primary-color: #9b59b6;
       --primary-glow: rgba(155, 89, 182, 0.5);
@@ -36,7 +83,6 @@
       --error-bg: rgba(220, 53, 69, 0.1);
       --error-text: #721c24;
     }
-
     [data-theme="dark"] {
       --primary-color: #a970c4;
       --primary-glow: rgba(169, 112, 196, 0.6);
@@ -52,12 +98,10 @@
       --error-bg: rgba(220, 53, 69, 0.2);
       --error-text: #f5c6cb;
     }
-
     html {
       scroll-behavior: smooth;
       overflow-x: hidden;
     }
-
     body {
       background: var(--bg-color);
       color: var(--text-color);
@@ -65,13 +109,11 @@
       transition: background 0.4s ease, color 0.4s ease;
       position: relative;
     }
-
     h1, h2, h3, h4, h5, h6 {
       font-family: 'Poppins', sans-serif;
       color: var(--heading-color);
       font-weight: 700;
     }
-
     a {
       text-decoration: none;
       color: var(--primary-color);
@@ -80,7 +122,6 @@
     a:hover {
       color: var(--primary-color-dark);
     }
-
     section {
       position: relative;
       z-index: 2;
@@ -88,20 +129,15 @@
       max-width: 1100px;
       margin: 0 auto;
     }
-
-    /* ===== REVEAL ON SCROLL ANIMATION ===== */
     .reveal {
       opacity: 0;
       transform: translateY(30px);
       transition: opacity 0.8s ease, transform 0.8s ease;
     }
-
     .reveal.visible {
       opacity: 1;
       transform: translateY(0);
     }
-
-    /* ===== PARTICLES & CURSOR GLOW BACKGROUND ===== */
     #interactive-bg {
       position: fixed;
       top: 0;
@@ -124,8 +160,6 @@
       transition: background 0.3s ease;
       z-index: -1;
     }
-
-    /* ===== HEADER ===== */
     header {
       position: fixed;
       top: 0;
@@ -168,7 +202,6 @@
     }
     nav a:hover::after { width: 100%; }
     .header-actions { display: flex; align-items: center; gap: 20px; }
-
     .theme-toggle {
       background: var(--card-bg);
       border: 1px solid var(--primary-color);
@@ -205,10 +238,7 @@
     [data-theme="dark"] .theme-toggle .fa-moon {
       transform: translateY(0);
     }
-
     .menu-toggle { display: none; font-size: 1.8rem; cursor: pointer; color: var(--text-color); }
-
-    /* ===== HERO SECTION ===== */
     #hero {
       min-height: 100vh;
       display: flex;
@@ -261,8 +291,6 @@
     .btn:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(155, 89, 182, 0.4); }
     .btn.secondary { background: transparent; border-color: var(--primary-color); color: var(--primary-color); }
     .btn.secondary:hover { background: var(--primary-color); color: #fff; }
-
-    /* ===== SHARED STYLES FOR SECTIONS ===== */
     .section-title {
       font-size: 3rem;
       color: var(--primary-color);
@@ -281,8 +309,6 @@
       background: var(--primary-color);
       border-radius: 2px;
     }
-
-    /* ===== ABOUT SECTION & TIMELINE ===== */
     .about-content {
       max-width: 750px;
       margin: 0 auto 80px;
@@ -352,8 +378,6 @@
     .timeline-content h3 { color: var(--primary-color); font-size: 1.5rem; margin-bottom: 5px; }
     .timeline-content span { font-size: 0.9rem; opacity: 0.7; font-style: italic; }
     .timeline-content p { margin-top: 10px; line-height: 1.6; }
-
-    /* ===== CERTIFICATES & SKILLS & PROJECTS (CARD-BASED LAYOUT) ===== */
     .grid-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -415,16 +439,12 @@
     .project-box a:hover::after {
       transform: translateX(5px);
     }
-
-    /* ===== CONTACT SECTION & FORM ===== */
     #contact { text-align: center; }
     .contact-intro { max-width: 600px; margin: 0 auto 40px auto; font-size: 1.1rem; line-height: 1.7; }
-
     #form-container {
       max-width: 700px;
       margin: 40px auto;
     }
-
     .contact-form {
       display: flex;
       flex-direction: column;
@@ -455,7 +475,6 @@
       align-self: flex-start;
       width: auto;
     }
-
     .form-feedback {
       padding: 40px;
       border-radius: 8px;
@@ -480,9 +499,8 @@
       line-height: 1.6;
     }
     .form-feedback .btn {
-      color: #fff; /* Ensure button text is white */
+      color: #fff;
     }
-
     .sr-only {
       position: absolute;
       width: 1px;
@@ -494,7 +512,6 @@
       white-space: nowrap;
       border-width: 0;
     }
-
     .contact-divider {
       font-weight: 600;
       color: var(--text-color);
@@ -521,8 +538,6 @@
       box-shadow: 0 8px 25px var(--shadow-color);
     }
     .contact-links a i { font-size: 1.8rem; color: var(--primary-color); }
-
-    /* ===== NEW FOOTER ===== */
     .site-footer {
       background: var(--card-bg);
       text-align: center;
@@ -566,8 +581,6 @@
       font-size: 0.9rem;
       opacity: 0.6;
     }
-
-    /* ===== MOBILE RESPONSIVENESS IMPROVEMENTS ===== */
     @media (max-width: 768px) {
       header {
         padding: 15px 20px;
@@ -616,7 +629,6 @@
         right: auto;
       }
     }
-
     @media (max-width: 480px) {
       section {
         padding: 80px 15px;
@@ -632,7 +644,6 @@
         padding: 10px 15px;
       }
     }
-
   </style>
 </head>
 
@@ -665,7 +676,7 @@
 
 <section id="hero">
   <div class="reveal">
-    <img src="assets/css/images/profile.jpeg" alt="Profile Picture" />
+    <img src="assets/css/images/profile.jpeg" alt="Areej Suleman - AI and ML Developer" />
     <h1>Hello, I'm <span>Areej Suleman</span></h1>
     <p class="subtitle"><span id="typing-text"></span><span class="cursor">&nbsp;</span></p>
     <div class="cta">
@@ -680,9 +691,7 @@
   <div class="about-content reveal">
     <strong>Who Am I?</strong>
     <p>
-      Passionate Artificial Intelligence enthusiast and aspiring ML Developer currently pursuing a BS in AI at COMSATS University.
-      Skilled in Python, machine learning, and frontend development with a strong foundation in data analysis and visualization.
-      Actively seeking opportunities to apply academic knowledge to real-world projects and contribute to innovative technology solutions.
+      A passionate Artificial Intelligence enthusiast and aspiring ML Developer based in Attock, Pakistan, currently pursuing a BS in AI at COMSATS University. I specialize in building machine learning models and creating data-driven insights. My skills include Python, machine learning, and frontend development, backed by a strong foundation in data analysis and visualization. I am actively seeking opportunities to apply my academic knowledge to real-world projects and contribute to innovative technology solutions.
     </p>
   </div>
 
@@ -704,7 +713,7 @@
     <div class="timeline-item left reveal">
       <div class="timeline-content">
         <h3>Bachelor of Science in Artificial Intelligence</h3>
-        <span>2023 - Present</span>
+        <span>2023 - Present (Expected 2027)</span>
         <p>Pursuing BS in Artificial Intelligence at COMSATS University, focusing on Machine Learning and Data Science.</p>
       </div>
     </div>
@@ -715,15 +724,15 @@
   <h2 class="section-title reveal">Certificates</h2>
   <div class="grid-container">
     <div class="card certificate-box reveal">
-      <img src="assets/css/images/certificates/certificate 1.jpeg" alt="Data Analysis in SQL" />
-      <h3>Data Analysis in SQL</h3>
+      <img src="assets/css/images/certificates/certificate 1.jpeg" alt="Certificate for Data Analysis in SQL" />
+      <h3>Data Analysis SQL</h3>
     </div>
     <div class="card certificate-box reveal">
-      <img src="assets/css/images/certificates/certificate 2.jpeg" alt="Generative AI" />
+      <img src="assets/css/images/certificates/certificate 2.jpeg" alt="Certificate for Generative AI" />
       <h3>Generative AI</h3>
     </div>
     <div class="card certificate-box reveal">
-      <img src="assets/css/images/certificates/certificate 3.jpeg" alt="AWS Machine Learning" />
+      <img src="assets/css/images/certificates/certificate 3.jpeg" alt="Certificate for AWS Machine Learning" />
       <h3>AWS Machine Learning</h3>
     </div>
   </div>
@@ -749,22 +758,22 @@
     <div class="card project-box reveal">
       <h3>Intelligent Timetable Scheduler <i class="fab fa-python project-language-icon" title="Python"></i></h3>
       <p>An AI-powered timetable scheduling system developed in Python that intelligently arranges university courses and exams.</p>
-      <a href="https://github.com/areej418/Intelligent-Timetable-Scheduler" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      <a href="https://github.com/Areej-Suleman/Intelligent-Timetable-Scheduler" target="_blank" rel="noopener noreferrer">View on GitHub</a>
     </div>
     <div class="card project-box reveal">
       <h3>Advanced Movie Rental System <i class="fab fa-java project-language-icon" title="Java"></i></h3>
       <p>A comprehensive movie rental application built in Java featuring GUI, rental management, and user authentication.</p>
-      <a href="https://github.com/areej418/Advanced-Movie-Rental-System" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      <a href="https://github.com/Areej-Suleman/Advanced-Movie-Rental-System" target="_blank" rel="noopener noreferrer">View on GitHub</a>
     </div>
     <div class="card project-box reveal">
       <h3>Mental Health Prediction Model <i class="fab fa-python project-language-icon" title="Python"></i></h3>
       <p>A machine learning project in Python to predict mental health conditions based on student data using classification algorithms.</p>
-      <a href="https://github.com/areej418/Mental-Health-Prediction" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      <a href="https://github.com/Areej-Suleman/Mental-Health-Prediction" target="_blank" rel="noopener noreferrer">View on GitHub</a>
     </div>
     <div class="card project-box reveal">
       <h3>Virtual University Management <i class="fab fa-java project-language-icon" title="Java"></i></h3>
       <p>A Java-based virtual university platform with a graphical user interface for managing courses, attendance, and student records.</p>
-      <a href="https://github.com/areej418/Virtual-University-System" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      <a href="https://github.com/Areej-Suleman/Virtual-University-System" target="_blank" rel="noopener noreferrer">View on GitHub</a>
     </div>
   </div>
 </section>
@@ -797,7 +806,7 @@
     <a href="mailto:areej987suleman@gmail.com" target="_blank" rel="noopener noreferrer">
       <i class="fas fa-envelope"></i> Email Me
     </a>
-    <a href="https://github.com/areej418" target="_blank" rel="noopener noreferrer">
+    <a href="https://github.com/Areej-Suleman" target="_blank" rel="noopener noreferrer">
       <i class="fab fa-github"></i> GitHub
     </a>
     <a href="https://linkedin.com/in/areej-suleman" target="_blank" rel="noopener noreferrer">
@@ -814,7 +823,7 @@
       <a href="mailto:areej987suleman@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
         <i class="fas fa-envelope"></i>
       </a>
-      <a href="https://github.com/areej418" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+      <a href="https://github.com/Areej-Suleman" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
         <i class="fab fa-github"></i>
       </a>
       <a href="https://linkedin.com/in/areej-suleman" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
@@ -823,16 +832,14 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© <span id="currentYear"></span> Areej Suleman. All Rights Reserved.</p>
+    <p>© <span id="currentYear">2025</span> Areej Suleman. All Rights Reserved.</p>
   </div>
 </footer>
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    // ===== DYNAMIC YEAR FOR FOOTER =====
     document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-    // ===== MENU TOGGLE FOR MOBILE =====
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('nav');
     menuToggle.addEventListener('click', () => {
@@ -842,13 +849,10 @@
       icon.classList.toggle('fa-times');
     });
 
-    // ===== THEME TOGGLE =====
     const themeBtn = document.querySelector('.theme-toggle');
     const htmlEl = document.documentElement;
-
     const savedTheme = localStorage.getItem('theme') || 'light';
     htmlEl.setAttribute('data-theme', savedTheme);
-
     themeBtn.addEventListener('click', () => {
       const currentTheme = htmlEl.getAttribute('data-theme');
       const nextTheme = currentTheme === 'light' ? 'dark' : 'light';
@@ -856,7 +860,6 @@
       localStorage.setItem('theme', nextTheme);
     });
 
-    // ===== SCROLL REVEAL ANIMATION =====
     const revealElements = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -866,22 +869,18 @@
         }
       });
     }, { threshold: 0.1 });
-
     revealElements.forEach(el => observer.observe(el));
 
-    // ===== INTERACTIVE CURSOR GLOW =====
     const cursorGlow = document.querySelector('.cursor-glow');
     document.addEventListener('mousemove', (e) => {
       cursorGlow.style.left = e.clientX + 'px';
       cursorGlow.style.top = e.clientY + 'px';
     });
 
-    // ===== NEW TYPING ANIMATION =====
     const typingTextEl = document.getElementById('typing-text');
     const cursorEl = document.querySelector('#hero .cursor');
     const textToType = "AI & ML Developer | Frontend Developer | Data Analyst";
     let charIndex = 0;
-
     function type() {
       if (charIndex < textToType.length) {
         typingTextEl.textContent += textToType.charAt(charIndex);
@@ -895,19 +894,14 @@
     }
     setTimeout(type, 500);
 
-    // ===== FORMSPREE SUBMISSION LOGIC =====
     const form = document.getElementById('contact-form');
     const formContainer = document.getElementById('form-container');
-
     async function handleSubmit(event) {
       event.preventDefault();
       const data = new FormData(event.target);
       const submitButton = form.querySelector('button[type="submit"]');
-
-      // Disable button while submitting
       submitButton.disabled = true;
       submitButton.textContent = 'Sending...';
-
       try {
         const response = await fetch(event.target.action, {
           method: form.method,
@@ -949,13 +943,10 @@
     }
     form.addEventListener("submit", handleSubmit);
 
-
-    // ===== INTERACTIVE PARTICLE BACKGROUND =====
     const canvas = document.getElementById('particles');
     const ctx = canvas.getContext('2d');
     let particles = [];
     let mouse = { x: null, y: null, radius: 100 };
-
     window.addEventListener('mousemove', (e) => {
       mouse.x = e.x;
       mouse.y = e.y;
@@ -964,14 +955,12 @@
       mouse.x = undefined;
       mouse.y = undefined;
     });
-
     function resizeCanvas() {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
     }
     window.addEventListener('resize', resizeCanvas);
     resizeCanvas();
-
     class Particle {
       constructor(x, y, dirX, dirY, size, color) {
         this.x = x; this.y = y;
@@ -996,7 +985,6 @@
         let force = (maxDist - distance) / maxDist;
         let dirX = forceDirX * force * this.density;
         let dirY = forceDirY * force * this.density;
-
         if (distance < mouse.radius) {
           this.x -= dirX;
           this.y -= dirY;
@@ -1013,7 +1001,6 @@
         this.draw();
       }
     }
-
     function initParticles() {
       particles = [];
       let numParticles = (canvas.height * canvas.width) / 9000;
@@ -1026,7 +1013,6 @@
         particles.push(new Particle(x, y, dirX, dirY, size, 'rgba(255,255,255,0.5)'));
       }
     }
-
     function connectParticles() {
       let opacityVal = 1;
       for (let a = 0; a < particles.length; a++) {
@@ -1045,7 +1031,6 @@
         }
       }
     }
-
     function animate() {
       requestAnimationFrame(animate);
       ctx.clearRect(0, 0, innerWidth, innerHeight);
@@ -1054,7 +1039,6 @@
       }
       connectParticles();
     }
-
     initParticles();
     animate();
   });
