@@ -8,7 +8,7 @@
 
   <meta name="description" content="Explore the professional portfolio of Areej Suleman, an AI & ML Developer and Data Analyst from Attock, Pakistan. Discover innovative machine learning projects, skills in Python, and a passion for data-driven solutions.">
 
-  <meta name="keywords" content="Areej Suleman, AI Developer, ML Developer, Machine Learning Engineer, Data Analyst, Portfolio, Python, COMSATS, Attock, Pakistan, Frontend Developer">
+  <meta name="keywords" content="Areej Suleman, AI Developer, ML Developer, Machine Learning Engineer, Data Analyst, Portfolio, Python, COMSATS, Attock, Pakistan, Frontend Developer, Internship, o2geeks">
 
   <link rel="canonical" href="https://areej-suleman.github.io/areej-portfolio/" />
 
@@ -41,7 +41,7 @@
       },
       "worksFor": {
         "@type": "Organization",
-        "name": "Areej Suleman"
+        "name": "o2geeks"
       },
       "address": {
         "@type": "PostalAddress",
@@ -62,7 +62,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   <style>
-    /* CSS styles remain the same... */
+    /* ===== CSS RESET ===== */
     * {
       margin: 0;
       padding: 0;
@@ -378,6 +378,13 @@
     .timeline-content h3 { color: var(--primary-color); font-size: 1.5rem; margin-bottom: 5px; }
     .timeline-content span { font-size: 0.9rem; opacity: 0.7; font-style: italic; }
     .timeline-content p { margin-top: 10px; line-height: 1.6; }
+    .timeline-content ul {
+      list-style-position: inside;
+      padding-left: 10px;
+      line-height: 1.7;
+      margin-top: 10px;
+      text-align: left;
+    }
     .grid-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -441,9 +448,17 @@
     }
     #contact { text-align: center; }
     .contact-intro { max-width: 600px; margin: 0 auto 40px auto; font-size: 1.1rem; line-height: 1.7; }
-    #form-container {
+    .card-form {
+      text-align: left;
       max-width: 700px;
       margin: 40px auto;
+      padding: 30px;
+    }
+    .form-title {
+      font-size: 1.8rem;
+      color: var(--heading-color);
+      margin-bottom: 20px;
+      text-align: center;
     }
     .contact-form {
       display: flex;
@@ -581,6 +596,38 @@
       font-size: 0.9rem;
       opacity: 0.6;
     }
+    #experience {
+      padding-top: 0;
+    }
+    .experience-card {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .experience-card .card-content {
+      text-align: left;
+    }
+    .experience-card .card-content h3 {
+      font-size: 1.8rem;
+      color: var(--primary-color);
+      margin-bottom: 5px;
+    }
+    .experience-card .card-content .company {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    .experience-card .card-content .duration {
+      font-size: 1rem;
+      opacity: 0.7;
+      margin-bottom: 15px;
+      display: block;
+    }
+    .experience-card .card-content ul {
+      list-style-position: inside;
+      padding-left: 10px;
+      line-height: 1.7;
+    }
+
     @media (max-width: 768px) {
       header {
         padding: 15px 20px;
@@ -658,6 +705,8 @@
   <nav>
     <a href="#hero">Home</a>
     <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
     <a href="#certificates">Certificates</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
@@ -694,7 +743,28 @@
       A passionate Artificial Intelligence enthusiast and aspiring ML Developer based in Attock, Pakistan, currently pursuing a BS in AI at COMSATS University. I specialize in building machine learning models and creating data-driven insights. My skills include Python, machine learning, and frontend development, backed by a strong foundation in data analysis and visualization. I am actively seeking opportunities to apply my academic knowledge to real-world projects and contribute to innovative technology solutions.
     </p>
   </div>
+</section>
 
+<section id="experience">
+  <h2 class="section-title reveal">Experience</h2>
+  <div class="experience-card">
+    <div class="card reveal">
+      <div class="card-content">
+        <h3>ML and NLP Developer - Intern</h3>
+        <p class="company">o2geeks</p>
+        <span class="duration">July 21, 2025 - August 29, 2025 (Ongoing)</span>
+        <ul>
+          <li>Developing and implementing machine learning models with a focus on Natural Language Processing (NLP).</li>
+          <li>Assisting in data collection, preprocessing, and feature engineering for NLP tasks.</li>
+          <li>Collaborating with the team to integrate ML models into existing applications.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <h2 class="section-title reveal">Education</h2>
   <div class="timeline">
     <div class="timeline-item left reveal">
       <div class="timeline-content">
@@ -714,7 +784,7 @@
       <div class="timeline-content">
         <h3>Bachelor of Science in Artificial Intelligence</h3>
         <span>2023 - Present (Expected 2027)</span>
-        <p>Pursuing BS in Artificial Intelligence at COMSATS University, focusing on Machine Learning and Data Science.</p>
+        <p>Pursuing a BS in Artificial Intelligence at COMSATS University, focusing on Machine Learning and Data Science.</p>
       </div>
     </div>
   </div>
@@ -725,7 +795,7 @@
   <div class="grid-container">
     <div class="card certificate-box reveal">
       <img src="assets/css/images/certificates/certificate 1.jpeg" alt="Certificate for Data Analysis in SQL" />
-      <h3>Data Analysis SQL</h3>
+      <h3>Data Analysis in SQL</h3>
     </div>
     <div class="card certificate-box reveal">
       <img src="assets/css/images/certificates/certificate 2.jpeg" alt="Certificate for Generative AI" />
@@ -782,22 +852,25 @@
   <h2 class="section-title reveal">Get In Touch</h2>
   <p class="contact-intro reveal">Have a question, a project proposal, or just want to say hello? Fill out the form below or reach out through my social channels.</p>
 
-  <div id="form-container" class="reveal">
-    <form id="contact-form" action="https://formspree.io/f/mwpqvnol" method="POST" class="contact-form">
-      <div class="form-group">
-        <label for="name" class="sr-only">Your Name</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
-      </div>
-      <div class="form-group">
-        <label for="email" class="sr-only">Your Email</label>
-        <input type="email" id="email" name="email" placeholder="Your Email" required>
-      </div>
-      <div class="form-group">
-        <label for="message" class="sr-only">Your Message</label>
-        <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
-      </div>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
+  <div class="card card-form reveal">
+    <h3 class="form-title">Send Me a Message</h3>
+    <div id="form-container">
+      <form id="contact-form" action="https://formspree.io/f/mwpqvnol" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="name" class="sr-only">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <label for="email" class="sr-only">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <label for="message" class="sr-only">Your Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
   </div>
 
   <p class="contact-divider reveal">Or find me on:</p>
