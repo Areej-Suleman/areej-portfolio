@@ -42,4 +42,4 @@ Areej-Portfolio
 
 ### 📬 Contact
 **Email:** areej987suleman@gmail.com  
-**GitHub:** [areej418](https://github.com/areej418)
+**GitHub:** [areej418](https://github.com/Areej-Suleman)
