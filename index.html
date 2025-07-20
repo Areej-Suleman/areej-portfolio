@@ -318,10 +318,28 @@
     .timeline-content h3 { color: var(--primary-color); font-size: 1.5rem; margin-bottom: 5px; }
     .timeline-content span { font-size: 0.9rem; opacity: 0.7; font-style: italic; }
     .timeline-content p { margin-top: 10px; line-height: 1.6; }
+
+    /* ===== TIMELINE MOBILE FIX ===== */
     @media (max-width: 768px) {
-      .timeline::after { left: 20px; }
-      .timeline-item { width: 100%; padding-left: 50px; padding-right: 15px; text-align: left !important; }
-      .timeline-item.left::after, .timeline-item.right::after { left: 10px; }
+      .timeline::after {
+        left: 20px; /* Position the main line on the left */
+      }
+      .timeline-item {
+        width: 100%;
+        padding-left: 60px; /* Add space for the line and circle */
+        padding-right: 15px;
+      }
+      .timeline-item.left,
+      .timeline-item.right {
+        left: 0; /* Align all items to the left */
+        text-align: left !important; /* Force text alignment */
+      }
+      .timeline-item.left::after,
+      .timeline-item.right::after {
+        left: 20px; /* Position the circle on the main line */
+        transform: translateX(-50%); /* Center the circle perfectly */
+        right: auto;
+      }
     }
 
     /* ===== CERTIFICATES & SKILLS & PROJECTS (CARD-BASED LAYOUT) ===== */
@@ -349,7 +367,8 @@
     /* Certificate Card */
     .certificate-box img {
       width: 100%;
-      height: auto;
+      height: 180px; /* Fixed height for consistency */
+      object-fit: cover;
       border-radius: 8px;
       margin-bottom: 15px;
     }
@@ -389,7 +408,6 @@
       transform: translateX(5px);
     }
 
-
     /* ===== CONTACT SECTION ===== */
     #contact { text-align: center; }
     .contact-intro { max-width: 600px; margin: 0 auto 40px auto; font-size: 1.3rem; line-height: 1.6; }
@@ -414,15 +432,49 @@
     }
     .contact-links a i { font-size: 1.8rem; color: var(--primary-color); }
 
-    /* ===== FOOTER ===== */
-    footer {
+    /* ===== NEW FOOTER ===== */
+    .site-footer {
+      background: var(--card-bg);
       text-align: center;
-      padding: 25px;
-      margin-top: 50px;
-      color: var(--text-color);
-      opacity: 0.7;
+      padding-top: 40px;
+      margin-top: 60px;
+      border-top: 1px solid rgba(155, 89, 182, 0.15);
       position: relative;
-      z-index: 2;
+      z-index: 10;
+    }
+    .footer-name {
+      font-size: 2rem;
+      color: var(--heading-color);
+      margin-bottom: 10px;
+    }
+    .footer-tagline {
+      font-size: 1rem;
+      margin-bottom: 25px;
+      opacity: 0.7;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .footer-social-links {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-bottom: 30px;
+    }
+    .footer-social-links a {
+      color: var(--text-color);
+      font-size: 1.6rem;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    .footer-social-links a:hover {
+      color: var(--primary-color);
+      transform: translateY(-4px) scale(1.1);
+    }
+    .footer-bottom {
+      border-top: 1px solid var(--shadow-color);
+      padding: 20px;
+      font-size: 0.9rem;
+      opacity: 0.6;
     }
   </style>
 </head>
@@ -434,7 +486,7 @@
 </div>
 
 <header>
-  <div class="logo">Areej S.</div>
+  <div class="logo">Areej Suleman</div>
   <nav>
     <a href="#hero">Home</a>
     <a href="#about">About</a>
@@ -503,15 +555,15 @@
   <h2 class="section-title reveal">Certificates</h2>
   <div class="grid-container">
     <div class="card certificate-box reveal">
-      <img src="assets/css/images/certificates/certificate 1.jpeg" alt="Certificate 1" />
+      <img src="assets/css/images/certificates/certificate 1.jpeg" alt="Data Analysis in SQL" />
       <h3>Data Analysis in SQL</h3>
     </div>
     <div class="card certificate-box reveal">
-      <img src="assets/css/images/certificates/certificate 2.jpeg" alt="Certificate 2" />
+      <img src="assets/css/images/certificates/certificate 2.jpeg" alt="Generative AI" />
       <h3>Generative AI</h3>
     </div>
     <div class="card certificate-box reveal">
-      <img src="assets/css/images/certificates/certificate 3.jpeg" alt="Certificate 3" />
+      <img src="assets/css/images/certificates/certificate 3.jpeg" alt="AWS Machine Learning" />
       <h3>AWS Machine Learning</h3>
     </div>
   </div>
@@ -573,8 +625,25 @@
   </div>
 </section>
 
-<footer>
-  <p>© <span id="currentYear"></span> Areej Suleman. All rights reserved.</p>
+<footer class="site-footer">
+  <div class="footer-content">
+    <h3 class="footer-name">Areej Suleman</h3>
+    <p class="footer-tagline">An aspiring developer passionate about building innovative AI solutions in Attock, Pakistan and beyond.</p>
+    <div class="footer-social-links">
+      <a href="mailto:areej987suleman@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://github.com/areej418" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/areej-suleman" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="currentYear"></span> Areej Suleman. All Rights Reserved.</p>
+  </div>
 </footer>
 
 <script>
