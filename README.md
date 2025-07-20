@@ -4,7 +4,7 @@ Welcome to my personal portfolio website!
 This site showcases my **skills**, **projects**, and **certifications**.
 
 ## 🌟 Live Demo
-[View My Portfolio](https://areej418.github.io/areej-portfolio/)
+[View My Portfolio](https://areej-suleman.github.io/areej-portfolio/)
 
 ## 📂 Portfolio Structure
 Areej-Portfolio
